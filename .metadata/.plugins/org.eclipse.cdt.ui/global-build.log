@@ -1,0 +1,1424 @@
+12:51:38 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+12:51:39 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+12:51:39 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+12:51:39 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Building file: ../src/screenManagment.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/screenManagment.d" -MT"src/screenManagment.o" -MT"src/screenManagment.d" -o "src/screenManagment.o" "../src/screenManagment.c"
+../src/screenManagment.c: In function 'oled_show_temp1':
+../src/screenManagment.c:14:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   14 |         sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
+      |                 ^~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../src/screenManagment.h:13,
+                 from ../src/screenManagment.c:1:
+c:\nxp\mcuxpressoide_11.9.1_2170\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819\tools\arm-none-eabi\include\stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../src/screenManagment.c:14:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
+   14 |         sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
+      |                       ~~~^        ~~~~~~~~~~~~~~~~
+      |                          |                    |
+      |                          int                  long int
+      |                       %02ld
+../src/screenManagment.c:14:29: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long int' [-Wformat=]
+   14 |         sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
+      |                            ~^                       ~~~~~~~~~~~~~~~~
+      |                             |                                   |
+      |                             int                                 long int
+      |                            %ld
+../src/main.c: In function 'main':
+../src/screenManagment.c: In function 'oled_show_clock':
+../src/main.c:172:17: warning: implicit declaration of function 'oled_show_temp2'; did you mean 'oled_show_temp1'? [-Wimplicit-function-declaration]
+  172 |                 oled_show_temp2(bufTemp, buf);
+      |                 ^~~~~~~~~~~~~~~
+      |                 oled_show_temp1
+../src/screenManagment.c:29:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   29 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                 ^~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+../src/main.c:173:17: warning: implicit declaration of function 'oled_show_timer'; did you mean 'oled_show_temp1'? [-Wimplicit-function-declaration]
+  173 |                 oled_show_timer(time2, buf);
+      |                 ^~~~~~~~~~~~~~~
+      |                 oled_show_temp1
+c:\nxp\mcuxpressoide_11.9.1_2170\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819\tools\arm-none-eabi\include\stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../src/screenManagment.c:29:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   29 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                       ~~~^             ~~~~~~~~~
+      |                          |                 |
+      |                          int               uint32_t {aka long unsigned int}
+      |                       %02ld
+../src/screenManagment.c:29:31: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   29 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                            ~~~^                   ~~~~~~~~
+      |                               |                       |
+      |                               int                     uint32_t {aka long unsigned int}
+      |                            %02ld
+../src/screenManagment.c:29:36: warning: format '%d' expects argument of type 'int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   29 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                                 ~~~^                        ~~~~~~~~
+      |                                    |                            |
+      |                                    int                          uint32_t {aka long unsigned int}
+      |                                 %02ld
+../src/screenManagment.c:32:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   32 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                 ^~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+c:\nxp\mcuxpressoide_11.9.1_2170\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819\tools\arm-none-eabi\include\stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../src/screenManagment.c:32:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   32 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                       ~~~^             ~~~~~~~~
+      |                          |                 |
+      |                          int               uint32_t {aka long unsigned int}
+      |                       %02ld
+../src/screenManagment.c:32:31: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   32 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                            ~~~^                  ~~~~~~~~~~
+      |                               |                      |
+      |                               int                    uint32_t {aka long unsigned int}
+      |                            %02ld
+../src/screenManagment.c:32:36: warning: format '%d' expects argument of type 'int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   32 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                                 ~~~^                         ~~~~~~~~~
+      |                                    |                             |
+      |                                    int                           uint32_t {aka long unsigned int}
+      |                                 %04ld
+Finished building: ../src/main.c
+Finished building: ../src/screenManagment.c
+ 
+ 
+Building target: oled_periph.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\Debug" -L"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\Debug" -L"C:\Users\student\Desktop\nasze\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=oled_periph.map -mcpu=cortex-m3 -mthumb -T oled_periph_Debug.ld -o "oled_periph.axf" ./src/cr_startup_lpc17.o ./src/main.o ./src/myRtc.o ./src/screenManagment.o    -lCMSISv1p30_LPC17xx -lLib_EaBaseBoard -lLib_MCU
+c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+C:\Users\student\Desktop\nasze\oled_periph\Debug/../src/main.c:172: undefined reference to `oled_show_temp2'
+c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:\Users\student\Desktop\nasze\oled_periph\Debug/../src/main.c:173: undefined reference to `oled_show_timer'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [makefile:44: oled_periph.axf] Error 1
+make: *** [makefile:35: all] Error 2
+"make -r -j16 all" terminated with exit code 2. Build might be incomplete.
+12:53:04 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+12:53:04 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+12:53:04 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+12:53:04 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:161:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  161 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+../src/main.c:130:23: warning: variable 'time2' set but not used [-Wunused-but-set-variable]
+  130 |         RTC_TIME_Type time2;
+      |                       ^~~~~
+Finished building: ../src/main.c
+ 
+Building target: oled_periph.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\Debug" -L"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\Debug" -L"C:\Users\student\Desktop\nasze\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=oled_periph.map -mcpu=cortex-m3 -mthumb -T oled_periph_Debug.ld -o "oled_periph.axf" ./src/cr_startup_lpc17.o ./src/main.o ./src/myRtc.o ./src/screenManagment.o    -lCMSISv1p30_LPC17xx -lLib_EaBaseBoard -lLib_MCU
+Finished building target: oled_periph.axf
+ 
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  41560	   1712	   1280	  44552	   ae08	oled_periph.axf
+ 
+12:53:22 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+12:53:22 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+12:53:23 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+12:53:23 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  41560	   1712	   1280	  44552	   ae08	oled_periph.axf
+ 
+12:53:24 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  41560	   1712	   1280	  44552	   ae08	oled_periph.axf
+ 
+12:54:57 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+12:54:57 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+12:54:57 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+12:54:58 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Building file: ../src/screenManagment.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/screenManagment.d" -MT"src/screenManagment.o" -MT"src/screenManagment.d" -o "src/screenManagment.o" "../src/screenManagment.c"
+../src/screenManagment.c: In function 'oled_show_temp1':
+../src/screenManagment.c:14:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   14 |         sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
+      |                 ^~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../src/screenManagment.h:13,
+                 from ../src/screenManagment.c:1:
+c:\nxp\mcuxpressoide_11.9.1_2170\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819\tools\arm-none-eabi\include\stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../src/screenManagment.c:14:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
+   14 |         sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
+      |                       ~~~^        ~~~~~~~~~~~~~~~~
+      |                          |                    |
+      |                          int                  long int
+      |                       %02ld
+../src/main.c: In function 'main':
+../src/screenManagment.c:14:29: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long int' [-Wformat=]
+   14 |         sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
+      |                            ~^                       ~~~~~~~~~~~~~~~~
+      |                             |                                   |
+      |                             int                                 long int
+      |                            %ld
+../src/main.c:163:17: warning: unused variable 'barId' [-Wunused-variable]
+  163 |         uint8_t barId;
+      |                 ^~~~~
+../src/main.c:161:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  161 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+../src/main.c:130:23: warning: variable 'time2' set but not used [-Wunused-but-set-variable]
+  130 |         RTC_TIME_Type time2;
+      |                       ^~~~~
+../src/screenManagment.c: In function 'oled_show_clock':
+../src/screenManagment.c:29:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   29 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                 ^~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+c:\nxp\mcuxpressoide_11.9.1_2170\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819\tools\arm-none-eabi\include\stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../src/screenManagment.c:29:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   29 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                       ~~~^             ~~~~~~~~~
+      |                          |                 |
+      |                          int               uint32_t {aka long unsigned int}
+      |                       %02ld
+../src/screenManagment.c:29:31: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   29 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                            ~~~^                   ~~~~~~~~
+      |                               |                       |
+      |                               int                     uint32_t {aka long unsigned int}
+      |                            %02ld
+../src/screenManagment.c:29:36: warning: format '%d' expects argument of type 'int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   29 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                                 ~~~^                        ~~~~~~~~
+      |                                    |                            |
+      |                                    int                          uint32_t {aka long unsigned int}
+      |                                 %02ld
+../src/screenManagment.c:32:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   32 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                 ^~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+c:\nxp\mcuxpressoide_11.9.1_2170\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819\tools\arm-none-eabi\include\stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../src/screenManagment.c:32:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   32 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                       ~~~^             ~~~~~~~~
+      |                          |                 |
+      |                          int               uint32_t {aka long unsigned int}
+      |                       %02ld
+../src/screenManagment.c:32:31: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   32 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                            ~~~^                  ~~~~~~~~~~
+      |                               |                      |
+      |                               int                    uint32_t {aka long unsigned int}
+      |                            %02ld
+../src/screenManagment.c:32:36: warning: format '%d' expects argument of type 'int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   32 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                                 ~~~^                         ~~~~~~~~~
+      |                                    |                             |
+      |                                    int                           uint32_t {aka long unsigned int}
+      |                                 %04ld
+Finished building: ../src/screenManagment.c
+Finished building: ../src/main.c
+ 
+ 
+Building target: oled_periph.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\Debug" -L"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\Debug" -L"C:\Users\student\Desktop\nasze\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=oled_periph.map -mcpu=cortex-m3 -mthumb -T oled_periph_Debug.ld -o "oled_periph.axf" ./src/cr_startup_lpc17.o ./src/main.o ./src/myRtc.o ./src/screenManagment.o    -lCMSISv1p30_LPC17xx -lLib_EaBaseBoard -lLib_MCU
+Finished building target: oled_periph.axf
+ 
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39856	   1712	   1228	  42796	   a72c	oled_periph.axf
+ 
+12:54:58 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39856	   1712	   1228	  42796	   a72c	oled_periph.axf
+ 
+12:55:44 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+12:55:44 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+12:55:44 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+12:55:45 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:163:17: warning: unused variable 'barId' [-Wunused-variable]
+  163 |         uint8_t barId;
+      |                 ^~~~~
+../src/main.c:161:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  161 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+../src/main.c:130:23: warning: variable 'time2' set but not used [-Wunused-but-set-variable]
+  130 |         RTC_TIME_Type time2;
+      |                       ^~~~~
+Finished building: ../src/main.c
+ 
+Building target: oled_periph.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\Debug" -L"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\Debug" -L"C:\Users\student\Desktop\nasze\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=oled_periph.map -mcpu=cortex-m3 -mthumb -T oled_periph_Debug.ld -o "oled_periph.axf" ./src/cr_startup_lpc17.o ./src/main.o ./src/myRtc.o ./src/screenManagment.o    -lCMSISv1p30_LPC17xx -lLib_EaBaseBoard -lLib_MCU
+Finished building target: oled_periph.axf
+ 
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39984	   1712	   1228	  42924	   a7ac	oled_periph.axf
+ 
+12:55:46 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39984	   1712	   1228	  42924	   a7ac	oled_periph.axf
+ 
+12:58:39 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+12:58:39 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+12:58:40 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+12:58:40 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:161:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  161 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: oled_periph.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\Debug" -L"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\Debug" -L"C:\Users\student\Desktop\nasze\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=oled_periph.map -mcpu=cortex-m3 -mthumb -T oled_periph_Debug.ld -o "oled_periph.axf" ./src/cr_startup_lpc17.o ./src/main.o ./src/myRtc.o ./src/screenManagment.o    -lCMSISv1p30_LPC17xx -lLib_EaBaseBoard -lLib_MCU
+Finished building target: oled_periph.axf
+ 
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+12:58:41 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+12:59:30 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+12:59:30 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+12:59:30 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+12:59:31 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+12:59:31 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+13:04:30 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+13:04:30 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+13:04:30 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+13:04:31 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Building file: ../src/screenManagment.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/screenManagment.d" -MT"src/screenManagment.o" -MT"src/screenManagment.d" -o "src/screenManagment.o" "../src/screenManagment.c"
+../src/screenManagment.c: In function 'oled_show_temp1':
+../src/screenManagment.c:12:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   12 |         sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
+      |                 ^~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../src/screenManagment.h:13,
+                 from ../src/screenManagment.c:1:
+c:\nxp\mcuxpressoide_11.9.1_2170\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819\tools\arm-none-eabi\include\stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../src/screenManagment.c:12:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
+   12 |         sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
+      |                       ~~~^        ~~~~~~~~~~~~~~~~
+      |                          |                    |
+      |                          int                  long int
+      |                       %02ld
+../src/screenManagment.c:12:29: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long int' [-Wformat=]
+   12 |         sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
+      |                            ~^                       ~~~~~~~~~~~~~~~~
+      |                             |                                   |
+      |                             int                                 long int
+      |                            %ld
+../src/screenManagment.c: In function 'oled_show_clock':
+../src/screenManagment.c:17:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   17 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                 ^~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+c:\nxp\mcuxpressoide_11.9.1_2170\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819\tools\arm-none-eabi\include\stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../src/screenManagment.c:17:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   17 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                       ~~~^             ~~~~~~~~~
+      |                          |                 |
+      |                          int               uint32_t {aka long unsigned int}
+      |                       %02ld
+../src/screenManagment.c:17:31: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   17 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                            ~~~^                   ~~~~~~~~
+      |                               |                       |
+      |                               int                     uint32_t {aka long unsigned int}
+      |                            %02ld
+../src/main.c: In function 'I2CRead':
+../src/screenManagment.c:17:36: warning: format '%d' expects argument of type 'int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   17 |         sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+      |                                 ~~~^                        ~~~~~~~~
+      |                                    |                            |
+      |                                    int                          uint32_t {aka long unsigned int}
+      |                                 %02ld
+../src/main.c:83:36: error: 'I2CDEV' undeclared (first use in this function)
+   83 |         if (I2C_MasterTransferData(I2CDEV, &rxsetup, I2C_TRANSFER_POLLING)
+      |                                    ^~~~~~
+../src/main.c:83:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/screenManagment.c:20:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   20 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                 ^~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+c:\nxp\mcuxpressoide_11.9.1_2170\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819\tools\arm-none-eabi\include\stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../src/screenManagment.c:20:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   20 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                       ~~~^             ~~~~~~~~
+      |                          |                 |
+      |                          int               uint32_t {aka long unsigned int}
+      |                       %02ld
+../src/main.c: In function 'I2CWrite':
+../src/main.c:101:36: error: 'I2CDEV' undeclared (first use in this function)
+  101 |         if (I2C_MasterTransferData(I2CDEV, &txsetup, I2C_TRANSFER_POLLING)
+      |                                    ^~~~~~
+../src/screenManagment.c:20:31: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   20 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                            ~~~^                  ~~~~~~~~~~
+      |                               |                      |
+      |                               int                    uint32_t {aka long unsigned int}
+      |                            %02ld
+../src/main.c: In function 'main':
+../src/screenManagment.c:20:36: warning: format '%d' expects argument of type 'int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   20 |         sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+      |                                 ~~~^                         ~~~~~~~~~
+      |                                    |                             |
+      |                                    int                           uint32_t {aka long unsigned int}
+      |                                 %04ld
+../src/main.c:136:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  136 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+../src/main.c: In function 'I2CRead':
+../src/main.c:89:1: warning: control reaches end of non-void function [-Wreturn-type]
+   89 | }
+      | ^
+../src/main.c: In function 'I2CWrite':
+../src/main.c:107:1: warning: control reaches end of non-void function [-Wreturn-type]
+  107 | }
+      | ^
+make[1]: *** [src/subdir.mk:29: src/main.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+Finished building: ../src/screenManagment.c
+ 
+make: *** [makefile:35: all] Error 2
+"make -r -j16 all" terminated with exit code 2. Build might be incomplete.
+13:04:31 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'I2CRead':
+../src/main.c:83:36: error: 'I2CDEV' undeclared (first use in this function)
+   83 |         if (I2C_MasterTransferData(I2CDEV, &rxsetup, I2C_TRANSFER_POLLING)
+      |                                    ^~~~~~
+../src/main.c:83:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'I2CWrite':
+../src/main.c:101:36: error: 'I2CDEV' undeclared (first use in this function)
+  101 |         if (I2C_MasterTransferData(I2CDEV, &txsetup, I2C_TRANSFER_POLLING)
+      |                                    ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:136:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  136 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+../src/main.c: In function 'I2CRead':
+../src/main.c:89:1: warning: control reaches end of non-void function [-Wreturn-type]
+   89 | }
+      | ^
+../src/main.c: In function 'I2CWrite':
+../src/main.c:107:1: warning: control reaches end of non-void function [-Wreturn-type]
+  107 | }
+      | ^
+make[1]: *** [src/subdir.mk:29: src/main.o] Error 1
+make: *** [makefile:35: all] Error 2
+"make -r -j16 all" terminated with exit code 2. Build might be incomplete.
+13:06:20 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+13:06:20 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+13:06:20 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+13:06:21 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'I2CRead':
+../src/main.c:84:36: error: 'I2CDEV' undeclared (first use in this function)
+   84 |         if (I2C_MasterTransferData(I2CDEV, &rxsetup, I2C_TRANSFER_POLLING)
+      |                                    ^~~~~~
+../src/main.c:84:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'I2CWrite':
+../src/main.c:102:36: error: 'I2CDEV' undeclared (first use in this function)
+  102 |         if (I2C_MasterTransferData(I2CDEV, &txsetup, I2C_TRANSFER_POLLING)
+      |                                    ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:137:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  137 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+../src/main.c: In function 'I2CRead':
+../src/main.c:90:1: warning: control reaches end of non-void function [-Wreturn-type]
+   90 | }
+      | ^
+../src/main.c: In function 'I2CWrite':
+../src/main.c:108:1: warning: control reaches end of non-void function [-Wreturn-type]
+  108 | }
+      | ^
+make[1]: *** [src/subdir.mk:29: src/main.o] Error 1
+make: *** [makefile:35: all] Error 2
+"make -r -j16 all" terminated with exit code 2. Build might be incomplete.
+13:06:21 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'I2CRead':
+../src/main.c:84:36: error: 'I2CDEV' undeclared (first use in this function)
+   84 |         if (I2C_MasterTransferData(I2CDEV, &rxsetup, I2C_TRANSFER_POLLING)
+      |                                    ^~~~~~
+../src/main.c:84:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'I2CWrite':
+../src/main.c:102:36: error: 'I2CDEV' undeclared (first use in this function)
+  102 |         if (I2C_MasterTransferData(I2CDEV, &txsetup, I2C_TRANSFER_POLLING)
+      |                                    ^~~~~~
+../src/main.c: In function 'main':
+../src/main.c:137:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  137 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+../src/main.c: In function 'I2CRead':
+../src/main.c:90:1: warning: control reaches end of non-void function [-Wreturn-type]
+   90 | }
+      | ^
+../src/main.c: In function 'I2CWrite':
+../src/main.c:108:1: warning: control reaches end of non-void function [-Wreturn-type]
+  108 | }
+      | ^
+make[1]: *** [src/subdir.mk:29: src/main.o] Error 1
+make: *** [makefile:35: all] Error 2
+"make -r -j16 all" terminated with exit code 2. Build might be incomplete.
+13:07:37 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+13:07:37 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+13:07:38 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+13:07:38 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:157:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  157 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: oled_periph.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\Debug" -L"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\Debug" -L"C:\Users\student\Desktop\nasze\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=oled_periph.map -mcpu=cortex-m3 -mthumb -T oled_periph_Debug.ld -o "oled_periph.axf" ./src/cr_startup_lpc17.o ./src/main.o ./src/myRtc.o ./src/screenManagment.o    -lCMSISv1p30_LPC17xx -lLib_EaBaseBoard -lLib_MCU
+Finished building target: oled_periph.axf
+ 
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+13:07:39 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+13:08:22 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+13:08:22 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+13:08:23 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+13:08:23 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:141:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  141 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: oled_periph.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\Debug" -L"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\Debug" -L"C:\Users\student\Desktop\nasze\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=oled_periph.map -mcpu=cortex-m3 -mthumb -T oled_periph_Debug.ld -o "oled_periph.axf" ./src/cr_startup_lpc17.o ./src/main.o ./src/myRtc.o ./src/screenManagment.o    -lCMSISv1p30_LPC17xx -lLib_EaBaseBoard -lLib_MCU
+Finished building target: oled_periph.axf
+ 
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+13:08:24 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+13:09:04 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+13:09:04 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+13:09:04 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+13:09:04 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+13:09:05 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+13:09:31 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC17xx.a >libCMSISv1p30_LPC17xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    590	      0	      0	    590	    24e	core_cm3.o (ex libCMSISv1p30_LPC17xx.a)
+   1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
+ 
+13:09:31 **** Incremental Build of configuration Debug for project Lib_MCU ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >libLib_MCU.lss
+   text	   data	    bss	    dec	    hex	filename
+   1250	      0	      0	   1250	    4e2	lpc17xx_adc.o (ex libLib_MCU.a)
+  11102	      0	     12	  11114	   2b6a	lpc17xx_can.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_clkpwr.o (ex libLib_MCU.a)
+    374	      0	      0	    374	    176	lpc17xx_dac.o (ex libLib_MCU.a)
+   2655	      0	  10852	  13507	   34c3	lpc17xx_emac.o (ex libLib_MCU.a)
+    352	      0	      0	    352	    160	lpc17xx_exti.o (ex libLib_MCU.a)
+   1552	     32	      0	   1584	    630	lpc17xx_gpdma.o (ex libLib_MCU.a)
+   2114	      0	      0	   2114	    842	lpc17xx_gpio.o (ex libLib_MCU.a)
+   5000	      0	     52	   5052	   13bc	lpc17xx_i2c.o (ex libLib_MCU.a)
+   2748	      0	      0	   2748	    abc	lpc17xx_i2s.o (ex libLib_MCU.a)
+     14	      0	      0	     14	      e	lpc17xx_libcfg_default.o (ex libLib_MCU.a)
+   1808	      0	      0	   1808	    710	lpc17xx_mcpwm.o (ex libLib_MCU.a)
+    232	      0	      0	    232	     e8	lpc17xx_nvic.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_pinsel.o (ex libLib_MCU.a)
+   2770	      0	      0	   2770	    ad2	lpc17xx_pwm.o (ex libLib_MCU.a)
+   2212	      0	      0	   2212	    8a4	lpc17xx_qei.o (ex libLib_MCU.a)
+    550	      0	      0	    550	    226	lpc17xx_rit.o (ex libLib_MCU.a)
+   3898	      0	      0	   3898	    f3a	lpc17xx_rtc.o (ex libLib_MCU.a)
+   1352	      0	      0	   1352	    548	lpc17xx_spi.o (ex libLib_MCU.a)
+   2596	      0	      0	   2596	    a24	lpc17xx_ssp.o (ex libLib_MCU.a)
+    494	      0	      0	    494	    1ee	lpc17xx_systick.o (ex libLib_MCU.a)
+   2794	      0	      0	   2794	    aea	lpc17xx_timer.o (ex libLib_MCU.a)
+   5553	      0	      0	   5553	   15b1	lpc17xx_uart.o (ex libLib_MCU.a)
+    732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
+ 
+13:09:31 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_EaBaseBoard.a >libLib_EaBaseBoard.lss
+   text	   data	    bss	    dec	    hex	filename
+    574	      0	      0	    574	    23e	acc.o (ex libLib_EaBaseBoard.a)
+    590	      0	      0	    590	    24e	eeprom.o (ex libLib_EaBaseBoard.a)
+   1359	     80	     12	   1451	    5ab	flash.o (ex libLib_EaBaseBoard.a)
+    768	      0	      0	    768	    300	font5x7.o (ex libLib_EaBaseBoard.a)
+    164	      0	      0	    164	     a4	joystick.o (ex libLib_EaBaseBoard.a)
+    142	     80	      0	    222	     de	led7seg.o (ex libLib_EaBaseBoard.a)
+   1170	      8	      0	   1178	    49a	light.o (ex libLib_EaBaseBoard.a)
+   3020	      0	    768	   3788	    ecc	oled.o (ex libLib_EaBaseBoard.a)
+   1042	      0	      6	   1048	    418	pca9532.o (ex libLib_EaBaseBoard.a)
+    146	      0	      0	    146	     92	rgb.o (ex libLib_EaBaseBoard.a)
+    232	      0	      0	    232	     e8	rotary.o (ex libLib_EaBaseBoard.a)
+    276	      0	      4	    280	    118	temp.o (ex libLib_EaBaseBoard.a)
+    840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
+ 
+13:09:32 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\nasze\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:140:17: warning: unused variable 'bufTemp' [-Wunused-variable]
+  140 |         uint8_t bufTemp[2] = { 0 };
+      |                 ^~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: oled_periph.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\student\Desktop\nasze\Lib_CMSISv1p30_LPC17xx\Debug" -L"C:\Users\student\Desktop\nasze\Lib_EaBaseBoard\Debug" -L"C:\Users\student\Desktop\nasze\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=oled_periph.map -mcpu=cortex-m3 -mthumb -T oled_periph_Debug.ld -o "oled_periph.axf" ./src/cr_startup_lpc17.o ./src/main.o ./src/myRtc.o ./src/screenManagment.o    -lCMSISv1p30_LPC17xx -lLib_EaBaseBoard -lLib_MCU
+Finished building target: oled_periph.axf
+ 
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
+13:09:33 **** Incremental Build of configuration Debug for project oled_periph ****
+make -r -j16 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.axf >oled_periph.lss
+   text	   data	    bss	    dec	    hex	filename
+  39936	   1712	   1228	  42876	   a77c	oled_periph.axf
+ 
